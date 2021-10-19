@@ -8,3 +8,5 @@
 	email = andy@nadalapps.com
 [color]
 	ui = auto
+[core]
+    editor = nano
