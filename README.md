@@ -14,3 +14,5 @@ Install homebrew
 
 Pass the brewfile location
 `brew bundle --file ~/.dotfiles/Brewfile`
+
+`brew bundle dump --describe`
