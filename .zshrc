@@ -1,5 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+echo "Welcome back, $USERNAME"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/andynadal/.oh-my-zsh"
@@ -115,11 +114,15 @@ function git_branch_name()
   fi
 }
 
+function mkcd() {
+    mkdir -p "$@" && cd "$_";
+}
+
 setopt prompt_subst
 
 PROMPT='%F{014}%n %F{013}%B%1d%f%b%F{010}$(git_branch_name)%f %B>>%b '
 RPROMPT='%F{015}%T%f'
 
-alias ls="ls -G"
-alias nav-zeus="cd ~/dev/upax/zeus/ZEUS_NEW_GENERIC_APP_IOS"
+alias ls="ls -lAGFh"
+alias lszeus="cd ~/dev/upax/zeus/ZEUS_NEW_GENERIC_APP_IOS"
 
