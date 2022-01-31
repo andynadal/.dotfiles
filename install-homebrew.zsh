@@ -2,9 +2,13 @@
 
 echo "\n<<< Starting Homebrew Setup >>>\n"
 
-if [ "${arch_name}" = "x86_64" ]; then
-    /bin/bash -c "$(curl - fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
-elif [ "${arch_name}" = "arm64" ]; then
+arch_name="$(uname -m)"
+
+if [ "${arch_name}" = "x86_64" ]
+then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+elif [ "${arch_name}" = "arm64" ]
+then
     cd /opt
     sudo git clone https://github.com/Homebrew/brew homebrew
     sudo chown -R $(whoami) /opt/homebrew
@@ -12,3 +16,5 @@ elif [ "${arch_name}" = "arm64" ]; then
     brew update --force --quiet
     chmod -R go-w "$(brew --prefix)/share/zsh"
 fi
+
+brew bundle --verbose
