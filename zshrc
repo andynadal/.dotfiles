@@ -1,8 +1,3 @@
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the start of this file.
-[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
-#### END FIG ENV VARIABLES ####
 # Welcome
 
 echo "Welcome back, $USERNAME"
@@ -43,15 +38,12 @@ function mkcd() {
 
 setopt prompt_subst
 
+## Syntax highligthing for `man` pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 PROMPT='%F{014}%n %F{013}%B%2d%f%b %F{010}$(git_branch_name)%f %B>>%b '
 RPROMPT='%F{015}%T%f'
 
 alias ls="ls -lAGFh"
 alias cdzeus="cd ~/dev/zeus/zeus-ios-sdk-new-generic-app"
 alias xcode12="/Applications/Xcode-12.app/Contents/MacOS/Xcode"
-
-
-#### FIG ENV VARIABLES ####
-# Please make sure this block is at the end of this file.
-[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
-#### END FIG ENV VARIABLES ####
