@@ -10,6 +10,7 @@ if [ "${arch_name}" = "x86_64" ]; then
     source /usr/local/share/antigen/antigen.zsh
 elif [ "${arch_name}" = "arm64" ]; then
     source /opt/homebrew/share/antigen/antigen.zsh
+    eval $(/opt/homebrew/bin/brew shellenv)
 fi
 
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -50,4 +51,3 @@ alias lstree="exa --tree --level=3"
 alias brewfile="brew bundle dump --force --describe"
 alias cdzeus="cd ~/dev/zeus/zeus-ios-sdk-new-generic-app"
 alias xcode12="/Applications/Xcode-12.app/Contents/MacOS/Xcode"
-eval $(/opt/homebrew/bin/brew shellenv)
