@@ -7,7 +7,7 @@ arch_name="$(uname -m)"
 if exists brew; then
     echo "--- Brew already installed, skipping instalation ---\n"
 else 
-    echo "--- Installing homebrew ---\n"
+    echo "--- Installing homebrew for architecture $arch_name ---\n"
     if [ "${arch_name}" = "x86_64" ]; then
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     elif [ "${arch_name}" = "arm64" ]; then
