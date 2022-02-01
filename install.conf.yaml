@@ -10,3 +10,9 @@
 
 - create:
     - ~/dev
+
+- shell:
+  - 
+    command: ./install-homebrew.zsh
+    stdout: true
+    stderr: true
