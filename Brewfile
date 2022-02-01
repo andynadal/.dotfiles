@@ -56,7 +56,6 @@ mas "Pages", id: 409201541
 mas "Reeder", id: 1529448980
 mas "Telegram", id: 747648890
 mas "TestFlight", id: 899247664
-mas "The Unarchiver", id: 425424353
 mas "TickTick", id: 966085870
 mas "Timery", id: 1425368544
 mas "Vimari", id: 1480933944
