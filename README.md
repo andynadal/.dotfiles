@@ -2,5 +2,5 @@
 
 ## TODO:
 
-- [x] Item
+- [x] Download and install Xcode templates repo.
 
