@@ -39,6 +39,8 @@ cask "iterm2"
 cask "numi"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Collaboration platform for API development
+cask "postman"
 # Team communication and collaboration software
 cask "slack"
 # Open-source code editor
