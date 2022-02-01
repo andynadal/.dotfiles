@@ -5,6 +5,8 @@ tap "homebrew/core"
 brew "antigen"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Modern replacement for 'ls'
+brew "exa"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Mac App Store command-line interface
