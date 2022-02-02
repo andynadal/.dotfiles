@@ -16,7 +16,6 @@
     - ~/dev
 
 - shell:
-  - 
-    command: ./install-homebrew.zsh
+  - command: ./install-homebrew.zsh
     stdout: true
     stderr: true
