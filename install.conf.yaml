@@ -5,8 +5,17 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: zshrc
-    ~/.gitconfig: gitconfig
+    ~/.zshrc:
+    ~/.zshenv:
+    ~/.gitconfig:
+    ~/.config/bat:
+      create: true
+      path: config/bat
 
- # - shell:
- #   - [git submodule update --init --recursive, Installing submodules]
+- create:
+    - ~/dev
+
+- shell:
+  - command: ./install-homebrew.zsh
+    stdout: true
+    stderr: true
