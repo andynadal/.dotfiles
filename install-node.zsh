@@ -11,3 +11,11 @@ else
     echo "Installing Node and NPM using n..."
     n lts 
 fi
+
+## installing global NPM packages
+
+npm install --global typescript
+npm install --global json-server
+
+echo "Global NPM packages installed"
+npm list --global --depth=0
