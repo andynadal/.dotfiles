@@ -19,3 +19,6 @@
   - command: ./install-homebrew.zsh
     stdout: true
     stderr: true
+  - command: ./install-node.zsh
+    stdout: true
+    stderr: true

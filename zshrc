@@ -43,6 +43,9 @@ setopt prompt_subst
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export HOMEBREW_CASK_OPTS=""
 export NULLCMD=bat
+export N_PREFIX="$HOME/.n"
+export PREFIX="$N_PREFIX"
+export PATH="$PATH:$N_PREFIX/bin"
 
 PROMPT='%F{014}%n %F{013}%B%2d%f%b %F{010}$(git_branch_name)%f %B>>%b '
 RPROMPT='%F{015}%T%f'
@@ -51,6 +54,8 @@ alias ls="exa -laFh --git"
 alias lstree="exa --tree --level=3"
 alias trail="<<<${(F)path}"
 alias brewfile="brew bundle dump --force --describe"
+
+alias rm=trash
 
 alias cdzeus="cd ~/dev/zeus/zeus-ios-sdk-new-generic-app"
 alias xcode12="/Applications/Xcode-12.app/Contents/MacOS/Xcode"
