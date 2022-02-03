@@ -55,5 +55,7 @@ alias lstree="exa --tree --level=3"
 alias trail="<<<${(F)path}"
 alias brewfile="brew bundle dump --force --describe"
 
+alias rm=trash
+
 alias cdzeus="cd ~/dev/zeus/zeus-ios-sdk-new-generic-app"
 alias xcode12="/Applications/Xcode-12.app/Contents/MacOS/Xcode"
