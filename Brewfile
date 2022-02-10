@@ -43,8 +43,6 @@ cask "discord"
 cask "firefox"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Use Vim in input fields and non input fields
-cask "kindavim"
 # Calculator and converter application
 cask "numi"
 # Knowledge base that works on top of a local folder of plain text Markdown files
