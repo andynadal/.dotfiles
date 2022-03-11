@@ -3,18 +3,12 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Modern replacement for 'ls'
 brew "exa"
 # Distributed revision control system
 brew "git"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Mac App Store command-line interface
@@ -23,6 +17,8 @@ brew "mas"
 brew "n"
 # Python dependency management tool
 brew "pipenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # File browser
 brew "ranger"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -43,6 +39,8 @@ cask "discord"
 cask "firefox"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# App to write, plan, collaborate, and get organized
+cask "notion"
 # Calculator and converter application
 cask "numi"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -61,11 +59,14 @@ mas "Focused Work", id: 1523968394
 mas "Keynote", id: 409183694
 mas "Meeter", id: 1510445899
 mas "Microsoft Excel", id: 462058435
+mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
+mas "Ochi", id: 1603024803
 mas "Pages", id: 409201541
 mas "Reeder", id: 1529448980
+mas "Spark", id: 1176895641
 mas "Telegram", id: 747648890
 mas "TestFlight", id: 899247664
 mas "TickTick", id: 966085870
