@@ -3,12 +3,18 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Plugin manager for zsh, inspired by oh-my-zsh and vundle
 brew "antigen"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Modern replacement for 'ls'
 brew "exa"
 # Distributed revision control system
 brew "git"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Mac App Store command-line interface
@@ -17,8 +23,6 @@ brew "mas"
 brew "n"
 # Python dependency management tool
 brew "pipenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # File browser
 brew "ranger"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -47,6 +51,8 @@ cask "numi"
 cask "obsidian"
 # Collaboration platform for API development
 cask "postman"
+# Instant messaging application focusing on security
+cask "signal"
 # Team communication and collaboration software
 cask "slack"
 # Open-source code editor
@@ -54,6 +60,7 @@ cask "visual-studio-code"
 # Video communication and virtual meeting platform
 cask "zoom"
 mas "Craft", id: 1487937127
+mas "Deliveries", id: 290986013
 mas "DuckDuckGo Privacy Essentials", id: 1482920575
 mas "Focused Work", id: 1523968394
 mas "Keynote", id: 409183694
