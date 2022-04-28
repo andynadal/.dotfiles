@@ -33,8 +33,6 @@ brew "swiftlint"
 brew "wget"
 # Application launcher and productivity software
 cask "alfred"
-# Allows connection to a computer remotely
-cask "anydesk"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Voice and text chat software
