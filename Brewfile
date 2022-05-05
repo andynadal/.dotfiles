@@ -31,14 +31,22 @@ brew "speedtest-cli"
 brew "swiftlint"
 # Internet file retriever
 brew "wget"
+# Collection of apps and services for photography, design, video, web, and UX
+cask "adobe-creative-cloud"
 # Application launcher and productivity software
 cask "alfred"
+# Tools for building Android applications
+cask "android-studio"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Voice and text chat software
 cask "discord"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 # Web browser
 cask "firefox"
+# Virtual globe
+cask "google-earth-pro"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # App to write, plan, collaborate, and get organized
@@ -53,6 +61,7 @@ cask "postman"
 cask "signal"
 # Team communication and collaboration software
 cask "slack"
+cask "spark"
 # Open-source code editor
 cask "visual-studio-code"
 # Video communication and virtual meeting platform
@@ -68,7 +77,7 @@ mas "Microsoft Outlook", id: 985367838
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
-mas "Ochi", id: 1603024803
+mas "OTP Manager", id: 928941247
 mas "Pages", id: 409201541
 mas "Reeder", id: 1529448980
 mas "Spark", id: 1176895641
