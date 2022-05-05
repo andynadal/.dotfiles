@@ -3,6 +3,7 @@
 ## TODO:
 
 - [x] Download and install Xcode templates repo.
+- [ ] Design script to clone repos, such as Xcode templates.
 
 
 ## Installation
