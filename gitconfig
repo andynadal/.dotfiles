@@ -5,8 +5,10 @@
 	required = true
 [user]
 	name = Andy Nadal
-	email = anadal@sherpabrokers.com
+	email = 76714753+andynadal@users.noreply.github.com
 [color]
 	ui = auto
 [core]
     editor = nano
+[advice]
+	detachedHead = false

@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # Welcome
 
 echo "Welcome back, $USERNAME"
@@ -61,3 +63,6 @@ alias trail="<<<${(F)path}"
 alias brewfile="brew bundle dump --force --describe"
 
 alias rm=trash
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
