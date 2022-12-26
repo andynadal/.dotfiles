@@ -2,7 +2,10 @@
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 # Welcome
 
-echo "Welcome back, $USERNAME"
+echo "Welcome back, using VI mode, $USERNAME"
+
+# VIM 
+bindkey -v
 
 # Architecture dependent scripts
 
@@ -61,6 +64,7 @@ alias ls="exa -laFh --git"
 alias lstree="exa --tree --level=3"
 alias trail="<<<${(F)path}"
 alias brewfile="brew bundle dump --force --describe"
+alias xcode14="/Applications/Xcode-14.app/Contents/MacOS/Xcode"
 
 alias rm=trash
 
