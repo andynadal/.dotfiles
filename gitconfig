@@ -6,9 +6,14 @@
 [user]
 	name = Andy Nadal
 	email = 76714753+andynadal@users.noreply.github.com
+	signingkey = 76714753+andynadal@users.noreply.github.com
 [color]
 	ui = auto
 [core]
     editor = nano
 [advice]
 	detachedHead = false
+[commit]
+	gpgsign = true
+[tag]
+    gpgsign = true

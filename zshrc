@@ -64,7 +64,6 @@ alias ls="exa -laFh --git"
 alias lstree="exa --tree --level=3"
 alias trail="<<<${(F)path}"
 alias brewfile="brew bundle dump --force --describe"
-alias xcode14="/Applications/Xcode-14.app/Contents/MacOS/Xcode"
 
 alias rm=trash
 
