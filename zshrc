@@ -64,8 +64,12 @@ alias ls="exa -laFh --git"
 alias lstree="exa --tree --level=3"
 alias trail="<<<${(F)path}"
 alias brewfile="brew bundle dump --force --describe"
+alias node="/opt/homebrew/bin/node"
 
 alias rm=trash
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
+
+echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf 
+killall gpg-agent

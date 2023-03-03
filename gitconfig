@@ -10,7 +10,7 @@
 [color]
 	ui = auto
 [core]
-    editor = nano
+    editor = vim
 [advice]
 	detachedHead = false
 [commit]
