@@ -17,3 +17,5 @@
 	gpgsign = true
 [tag]
     gpgsign = true
+[maintenance]
+	repo = /Users/andynadal/dev/ruut/ios

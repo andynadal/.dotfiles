@@ -52,6 +52,8 @@ export N_PREFIX="$HOME/.n"
 
 typeset -U path
 
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+
 path=(
     "$N_PREFIX/bin"
     $path
@@ -63,11 +65,16 @@ RPROMPT='%F{015}%T%f'
 alias ls="exa -laFh --git"
 alias lstree="exa --tree --level=3"
 alias trail="<<<${(F)path}"
+export HOMEBREW_BREWFILE=~/.dotflines/Brewfile
 alias brewfile="brew bundle dump --force --describe"
 alias node="/opt/homebrew/bin/node"
+alias python="/Users/andynadal/.pyenv/versions/3.10.14/bin/python"
 
 alias rm=trash
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
 

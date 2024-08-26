@@ -1,24 +1,24 @@
 {
   "alfredtheme" : {
     "result" : {
-      "textSpacing" : 5,
+      "textSpacing" : 9,
       "subtext" : {
         "size" : 12,
         "colorSelected" : "#FFFFFFCC",
-        "font" : "Cascadia Code",
+        "font" : "Sono",
         "color" : "#FFFFFF66"
       },
       "shortcut" : {
         "size" : 16,
         "colorSelected" : "#FFFFFFFF",
-        "font" : "Cascadia Code",
+        "font" : "Sono",
         "color" : "#FEFFFF66"
       },
       "backgroundSelected" : "#016BDEFF",
       "text" : {
-        "size" : 18,
+        "size" : 21,
         "colorSelected" : "#FFFFFFFF",
-        "font" : "Cascadia Code",
+        "font" : "Sono",
         "color" : "#FFFFFFD8"
       },
       "iconPaddingHorizontal" : 4,
@@ -33,7 +33,7 @@
       "text" : {
         "size" : 34,
         "colorSelected" : "#FFFFFFFF",
-        "font" : "Cascadia Code",
+        "font" : "Sono",
         "color" : "#FFFFFFFF"
       },
       "background" : "#FFFFFF00",
@@ -46,11 +46,12 @@
       "width" : 559,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
-      "blur" : 15,
+      "blur" : 0,
       "roundness" : 3,
       "paddingVertical" : 4
     },
     "credit" : "Andy",
+    "visualEffectMode" : 2,
     "separator" : {
       "color" : "#CBCBCBF3",
       "thickness" : 0

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.andynadal.open-project</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>C0599899-ADDA-4673-96A5-3A353EF86396</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E5F6E69-DEFC-4663-A27F-089241A5427B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Andy Nadal</string>
+	<key>description</key>
+	<string>Open project</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open Project</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>keyword</key>
+				<string>op</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Open project</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>C0599899-ADDA-4673-96A5-3A353EF86396</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>6</integer>
+				<key>script</key>
+				<string>project={query}
+
+if [[ "$project" == "vsruut" ]]; then
+    	open "/Users/andynadal/dev/ruut/ios/ios.code-workspace"
+	osascript -e 'display notification "Opening RUUT on VSCode."'
+elif [[ "$project" == "ruut" ]]; then
+	open "/Users/andynadal/dev/ruut/ios/RUUT.xcworkspace"
+	osascript -e 'display notification "Opening RUUT on Xcode."'
+elif [[ "$project" == "website" ]]; then
+    	open "/Users/andynadal/dev/personal/new-website/new-website.code-workspace"
+	osascript -e 'display notification "Opening Website on VSCode."'
+elif [[ "$project" == "de" ]]; then
+    	open "/Users/andynadal/dev/dressease/dressease-ios/DressEase.xcworkspace"
+	osascript -e 'display notification "Opening DressEase on Xcode."'
+elif [[ "$project" == "vsde" ]]; then
+    	code "/Users/andynadal/dev/dressease/dressease-ios/dressease-ios.code-workspace"
+	osascript -e 'display notification "Opening DressEase on VSCode."'
+elif [[ "$project" == "np" ]]; then
+    	open "/Users/andynadal/dev/neuron-peak/app/NeuronPeak.xcworkspace"
+	osascript -e 'display notification "Opening DressEase on Xcode."'
+elif [[ "$project" == "vsnp" ]]; then
+    	code "/Users/andynadal/dev/neuron-peak/app/app.code-workspace"
+	osascript -e 'display notification "Opening DressEase on VSCode."'
+else
+    	osascript -e 'display notification "Project not found."'
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6E5F6E69-DEFC-4663-A27F-089241A5427B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>6E5F6E69-DEFC-4663-A27F-089241A5427B</key>
+		<dict>
+			<key>xpos</key>
+			<real>265</real>
+			<key>ypos</key>
+			<real>45</real>
+		</dict>
+		<key>C0599899-ADDA-4673-96A5-3A353EF86396</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>45</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>webaddress</key>
+	<string>andynadal.com</string>
+</dict>
+</plist>
